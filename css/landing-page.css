@@ -18,6 +18,10 @@ h6 {
   font-weight: 700;
 }
 
+.nav-bg {
+  background-color: #0b0b17;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -38,11 +42,12 @@ header.masthead .overlay {
 }
 
 header.masthead h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 header.masthead p {
-  font-size: 1.2rem;
+  color: #d3faff;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -54,7 +59,8 @@ header.masthead p {
     font-size: 3rem;
   }
   header.masthead p {
-    font-size: 1.5rem;
+    color: #d3faff;
+    font-size: 1.2rem;
   }
 }
 

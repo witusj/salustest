@@ -15,10 +15,11 @@ header.masthead {
     opacity: 0.3;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   p {
-    font-size: 1.2rem;
+    color: $water;
+    font-size: 1rem;
   }
   @media (min-width: 768px) {
     padding-top: 12rem;
@@ -27,8 +28,8 @@ header.masthead {
       font-size: 3rem;
     }
     p {
-      color: $cream
-      font-size: 2rem;
+      color: $water;
+      font-size: 1.2rem;
     }
   }
 }
