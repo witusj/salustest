@@ -35,7 +35,7 @@ Highcharts.mapChart('mapcontainer', {
     },
 
     title: {
-        text: 'Sanctielanden'
+        text: ''
     },
 
     legend: {
@@ -43,7 +43,7 @@ Highcharts.mapChart('mapcontainer', {
     },
 
     mapNavigation: {
-        enabled: true,
+        enabled: false,
         buttonOptions: {
             verticalAlign: 'bottom'
         }
@@ -61,21 +61,22 @@ Highcharts.mapChart('mapcontainer', {
                 color: 'tomato'
             }
         },
+
         dataLabels: {
             enabled: false,
             format: '{point.name}'
         },
+
         tooltip: {
-          headerFormat: '',
-          //pointFormat: '{point.name}: <b>{point.value}</b><br/>'
+          headerFormat: null,
           formatter: function () {
-            str="";
+                var str="";
     						if(this.point.value === 1){
                 str="Ja";
                 }
                 return 'Point name: ' + this.point.name + '<br>' +
                     'SalusChecked: ' + str;
             }
-          }
+        }
     }]
 });
