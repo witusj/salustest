@@ -53,6 +53,18 @@ Highcharts.mapChart('mapcontainer', {
         maxColor: 'sandybrown'
     },
 
+    tooltip: {
+      headerFormat: null,
+      formatter: function () {
+            var str="";
+            if(this.point.value === 1){
+            str="Ja";
+            }
+            return 'Land: ' + this.point.name + '<br>' +
+                'SalusChecked: ' + str;
+        }
+    },
+
     series: [{
         data: data,
         name: 'Land',
@@ -65,18 +77,8 @@ Highcharts.mapChart('mapcontainer', {
         dataLabels: {
             enabled: false,
             format: '{point.name}'
-        },
-
-        tooltip: {
-          headerFormat: null,
-          formatter: function () {
-                var str="";
-    						if(this.point.value === 1){
-                str="Ja";
-                }
-                return 'Point name: ' + this.point.name + '<br>' +
-                    'SalusChecked: ' + str;
-            }
         }
+
+
     }]
 });
